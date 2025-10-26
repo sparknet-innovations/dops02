@@ -1,4 +1,4 @@
-# 🌐 Full Stack DevOps Challenge – Cloud Deployment Project
+# 🌐 Full Stack DevOps Challenge
 
 ## 📘 Project Overview
 
