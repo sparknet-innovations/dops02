@@ -1,93 +1,103 @@
-# AuraBeauty – Dynamic DevOps Project
+# 🌐 Full Stack DevOps Challenge – Cloud Deployment Project
 
-## 🌐 Overview
+## 📘 Project Overview
 
-**AuraBeauty** is a modern, cloud-native **eCommerce web application** designed and deployed using an **end-to-end DevOps pipeline**.
-The project demonstrates the complete lifecycle — from code to cloud — integrating **frontend (React)**, **backend (Node.js & Express)**, **database (MongoDB Atlas)**, and **containerized deployments** on cloud platforms.
+This repository contains a full-stack web application built with **React (Frontend)** and **Node.js (Backend)**, containerized using **Docker**, and designed for **DevOps implementation and cloud deployment**.
+The project architecture simulates a real-world enterprise environment — including CI/CD, security scans, infrastructure automation, and monitoring.
 
-This project reflects industry-level DevOps workflows with strong emphasis on automation, scalability, and observability.
-
----
-
-## 🚀 Key Objectives
-
-* Implement an end-to-end **DevOps pipeline** showcasing CI/CD best practices.
-* Deploy microservice-based web apps in a **containerized** environment.
-* Demonstrate **cross-cloud capability** — developed on **Azure**, challenge adaptable to **AWS**.
-* Ensure high code quality, environment consistency, and secure delivery pipelines.
-* Enable hands-on learning through intentionally crafted debugging and optimization challenges.
+However, the project contains a few **intentional misconfigurations and hidden challenges** that interns must identify and fix to ensure smooth execution and deployment.
 
 ---
 
-## 🧩 Architecture Highlights
+## 🎯 Objective
 
-* **Frontend:** ReactJS (user-friendly shopping interface)
-* **Backend:** Node.js + Express (REST API for orders and users)
-* **Database:** MongoDB Atlas (cloud-based NoSQL)
-* **Containerization:** Docker with multi-stage builds for optimized images
-* **Deployment:** Azure Container Apps (ACA)
-* **Version Control:** Git & GitHub
-* **Infrastructure:** Infrastructure-as-Code using Terraform
-* **Monitoring & Security:** Integrated directories for observability, vulnerability scanning, and policy compliance
+Your goal is to:
+
+* Debug and fix existing configuration issues.
+* Containerize and orchestrate the full stack.
+* Deploy the complete system on **AWS (Free Tier only)** using best DevOps practices.
+* Ensure end-to-end connectivity and performance of all services.
 
 ---
 
-## ⚙️ DevOps Implementation
+## 🧩 Error Challenge Scope
 
-* **CI/CD Pipeline:** Automated build, test, and deployment workflows.
-* **Containerization:** Independent Dockerfiles for frontend and backend with clean `.dockerignore` policies.
-* **IaC (Infrastructure-as-Code):** Terraform used for provisioning and environment setup.
-* **Environment Management:** `.env`-driven configurations for isolated and secure deployments.
-* **Cloud Integration:** Fully operational on Azure’s free-tier resources, replicable on AWS.
-* **Security Controls:** Dedicated `security/` directory for future enhancements and policy enforcement.
+This project intentionally includes **multiple setup and configuration issues** across:
 
----
+* Backend
+* Frontend
+* Docker
+* Terraform
+* Security and CI/CD scripts
 
-## 🧠 Learning & Challenge Scope
+Your task is to:
 
-The project is structured to simulate **real-world DevOps scenarios** with hands-on debugging opportunities.
-Participants are encouraged to:
+1. **Identify** the issues.
+2. **Fix and document** the solutions.
+3. **Deploy** the entire stack successfully on AWS Free Tier.
 
-* Analyze pipeline behavior and resolve build/deployment issues.
-* Optimize Docker images and environment configurations.
-* Scale, monitor, and secure workloads using cloud services.
-* Migrate and adapt the same setup to **AWS** for cross-cloud experience.
+> 💬 Note: The same project was developed on **Azure**, but your challenge is to **recreate and deploy it on AWS** using similar architecture and services available in the free tier.
 
 ---
 
-## 📂 Repository Structure
+## 🏗️ Project Structure
 
 ```
-/app
- ├── frontend       # React UI
- └── backend        # Node.js API
-
-/docker             # Dockerfiles and container configs
-/scripts            # Automation & setup scripts
-/terraform          # IaC provisioning files
-/security           # Security & compliance modules
-/monitoring         # Observability & health monitoring setup
+root/
+│
+├── app/
+│   ├── backend/        # Node.js API service
+│   └── frontend/       # React web interface
+│
+├── docker/             # Dockerfiles and image setup
+├── terraform/          # Infrastructure as Code setup
+├── scripts/            # Automation and deployment scripts
+├── monitoring/         # Monitoring and logging configuration
+├── security/           # Security scanning and compliance scripts
+│
+├── .gitignore
+├── .dockerignore
+└── README.md
 ```
 
 ---
 
-## 🧾 Features Summary
+## 🧠 Learning Outcomes
 
-* Dynamic order placement system connected to MongoDB Atlas.
-* Responsive UI built with Chakra-UI.
-* API routes secured and validated.
-* Scalable microservice-based architecture.
-* Integrated CI/CD for continuous delivery to cloud.
-* Complete DevOps structure following enterprise best practices.
+By completing this challenge, interns will gain:
+
+* Real-world DevOps troubleshooting experience.
+* Hands-on skills in containerization and orchestration.
+* Exposure to CI/CD automation and cloud infrastructure.
+* Understanding of AWS Free Tier services and best practices.
+* Problem-solving and debugging proficiency in distributed systems.
 
 ---
 
-## 🏁 Outcome
+## 🧾 Deliverables
 
-AuraBeauty stands as a **professional-grade DevOps project** demonstrating:
+Each intern must submit:
 
-* Full CI/CD workflow automation
-* Cross-cloud deployability
-* Modular and maintainable architecture
-* Strong alignment with **real-world DevOps engineering standards**
+1. A **working deployment** of the project on AWS Free Tier.
+2. A **report/documentation** explaining the steps taken to fix errors and deploy.
+3. A **demo video** or screenshots showing successful end-to-end execution.
 
+---
+
+## 🧮 Evaluation Criteria
+
+| Criteria                 | Description                                       |
+| ------------------------ | ------------------------------------------------- |
+| 🔧 Problem Solving       | Ability to debug and resolve configuration issues |
+| ☁️ Cloud Implementation  | Proper setup and deployment on AWS Free Tier      |
+| 🔒 Security & Compliance | Application of secure DevOps practices            |
+| 🐳 Containerization      | Efficient use of Docker and image management      |
+| ⚙️ CI/CD Automation      | Smooth build and deployment pipelines             |
+| 📘 Documentation         | Clear explanation of findings and approach        |
+
+---
+
+## 🚀 Final Note
+
+This challenge is designed to test your **real-world DevOps thinking** — not just execution.
+You’re expected to **analyze**, **plan**, and **implement** a reliable AWS-based deployment by overcoming hidden issues within the project.
