@@ -10,11 +10,10 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || '*', // Frontend ACA URL
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: "http://localhost:3000",
+  credentials: true
 };
+
 app.use(cors(corsOptions));
 app.use(express.json());
 

@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Running Trivy scan on local images..."
-trivy image backend
-trivy image frontend
+trivy image aurabeauty_backend
+trivy image aurabeauty_frontend

@@ -48,7 +48,7 @@ const placeOrder = async () => {
       total
     };
 
-const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/orders`, {
+const response = await fetch('http://backend-aurabeauty:5000/api/orders', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(orderData)

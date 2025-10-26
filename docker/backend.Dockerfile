@@ -2,6 +2,8 @@ FROM node:18-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY . .
-EXPOSE 5000
+COPY ../backend /app
+ENV MONGODB_URI="mongodb://localhost:27017/aura"
+
+EXPOSE 3000
 CMD ["npm", "start"]
